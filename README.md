@@ -2,6 +2,8 @@
 <img src="readmeRes/banner_logo.png"/>
 </div>
 
+## LinkTree based on [LinkForest](https://alphadarkmoon.github.io/docs.github.io/Docs/LinkForest/index.html) Theme
+
 # LinkForest: Navigating a Curated Pathway of Links
 
 Welcome to LinkForest, your curated pathway to a plethora of links. Journey effortlessly through this digital realm, unlocking a spectrum of resources, insights, and connections with just a click. Explore and discover, for here lies a hub tailored just for you. Let's navigate through this digital forest together!
