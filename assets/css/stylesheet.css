@@ -1,0 +1,439 @@
+/*===========================================================
+
+   Template Name: LinkForest
+   Author: AlphaDarkmoon --RekkusuYash
+   Template URL: https://github.com/AlphaDarkmoon/LinkForest 
+   Author URL: https://github.com/AlphaDarkmoon
+   File Description : Main css file of the LinkForest
+	
+=================================================
+  Table of Contents
+=================================================
+
+	1. Basic Style
+	2. Animations
+	3. Cards Background
+		3.1 Index / Top /Jumper
+		3.2 Websites
+		3.3 Social Media
+    3.4 Others
+	4. Header
+	5 Top / Profile CSS
+	6 Cards
+	7. Adaptive MediaQuerry
+		7.1 Smartphones
+		7.2 tablets
+		7.3 desktops
+    7.4 large desktops
+  8. Footer
+  9. Extra
+		9.1 Splash Screen
+		9.2 Extras
+
+=======================================================*/
+
+/* ===================================
+   1. Basic Style
+=================================== */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url('https://i.ibb.co/KhNfQ1Y/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* ===================================
+   2. Animations
+=================================== */
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
+@keyframes typewriter {
+  from {
+      width: 0;
+  }
+  to {
+      width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+      border-right-color: rgba(255, 255, 255, .75);
+  }
+  to {
+      border-right-color: transparent;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-15px);
+  }
+}
+
+/* ===================================
+   3. Cards Background
+=================================== */
+
+/* Index / Top /Jumper */
+.bg-websites {
+  background: linear-gradient(to right, #0a58e9, #014daf);
+}
+
+.bg-social {
+  background: linear-gradient(to right, #27af7b, #009c47);
+}
+
+.bg-extra {
+  background: linear-gradient(to right, #710af7, #670180);
+}
+
+
+/* Websites */
+.bg-website {
+  background: linear-gradient(to right, #8e44ad, #471c58);
+}
+
+.bg-portfolio {
+  background: linear-gradient(to right, #34db9b, #07e46a);
+}
+
+.bg-shop {
+  background: linear-gradient(to right, #0af7f7, #016280);
+}
+
+
+/* Social Media */
+.bg-insta {
+  background: linear-gradient(to right, #bc2a8d, #e95950);
+}
+.bg-github {
+  background: linear-gradient(45deg, #2ecc40, #3498db);
+}
+.bg-raddit {
+  background: linear-gradient(45deg, #c24101, #ff6600);
+}
+
+.bg-twitter {
+  background: linear-gradient(to right, #000000, #ffffff);
+}
+
+.bg-session {
+  background: linear-gradient(to left, #35f1a3, #252525);
+}
+
+.bg-amino {
+  background: linear-gradient(to right, #1b17f5, #1ff7f7);
+}
+
+.bg-discord  {
+  background: linear-gradient(to right, #9200e6, #3b006b);
+}
+
+
+/* Others */
+.bg-dribbble {
+  background: linear-gradient(to right, #eb18a8, #74013a);
+}
+.bg-github {
+  background: linear-gradient(45deg, #2ecc40, #3498db);
+}
+.bg-behance {
+  background: linear-gradient(135deg, #328afc, #1c3261);
+}
+
+.bg-twitter {
+  background: linear-gradient(to right, #000000, #ffffff);
+}
+
+.bg-stack {
+  background: linear-gradient(135deg, #0077b5, #d56000);
+}
+
+.bg-quora {
+  background: linear-gradient(to right, #fa3e3e, #7e0116);
+}
+
+.bg-pinterest  {
+  background: linear-gradient(to right, #E60023, #FFFFFF);
+}
+
+/* ===================================
+   4. Header
+=================================== */
+#header {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#header .navbar {
+  padding: 0px;
+  min-height: 70px;
+}
+
+.head {
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+/* ===================================
+   3. Top / Profile CSS
+=================================== */
+.profile-img {
+  animation: bounce 1s ease;
+  transform: scaleX(-1);
+}
+
+.profile-img-rev {
+  transform: scaleX(-1);
+}
+
+.SocialMedia hr {
+border: 0;
+border-top: 2px solid #ffffff9a;
+}
+
+/* ===================================
+   3. Cards
+=================================== */
+.card-box {
+  position: relative;
+  color: #fff;
+  padding: 20px 10px 40px;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 8px;
+}
+.card-box:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.card-box:hover .icon img {
+  font-size: 100px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+.card-box .inner {
+  padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+  font-size: 27px;
+  font-weight:600;
+  margin: 0 0 8px 0;
+  white-space: nowrap;
+  padding: 0;
+  text-align: left;
+}
+.card-box p {
+  font-size: 15px;
+}
+.card-box .icon {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  z-index: 0;
+  font-size: 72px;
+  color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  padding: 3px 0;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-decoration: none;
+}
+.card-box:hover .card-box-footer {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.icon img {
+  height: auto; 
+  display: block;
+}
+
+
+/* ===================================
+   5. Adaptive MediaQuerry
+=================================== */
+/* Styles for small devices (e.g., smartphones) */
+@media (max-width: 767px) {
+  .icon img {
+    max-width: 70px; 
+     }
+    .card-box h3 {
+      font-size: 20px;
+    }
+
+    .card-box p {
+      font-size: 14px;
+    }
+}
+
+/* Styles for medium devices (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .icon img {
+    max-width: 100px; 
+  }
+}
+
+/* Styles for large devices (e.g., desktops) */
+@media (min-width: 992px) and (max-width: 1410px) {
+  .icon img {
+    max-width: 80px; 
+  }
+
+  .card-box h3 {
+    font-size: 18px;
+  }
+
+  .card-box p {
+    font-size: 14px;
+  }
+}
+
+/* Styles for extra large devices (e.g., large desktops) */
+@media (min-width: 1200px) {
+  .icon img {
+    max-width: 120px; 
+  }
+}
+
+/* ===================================
+   6. Footer
+=================================== */
+
+footer {
+  color: rgb(255, 255, 255);
+}
+
+/* ===================================
+   7. Extra
+=================================== */
+
+/* Splash Screen */
+#splash-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #000000;
+}
+
+#splash-screen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Extra */
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+
+.legend {
+  margin: 0;
+}
+
+h1.text-center {
+  margin-bottom: -10px; 
+}
+
+h3.text-center {
+  font-size: 25px;
+}
+
+.jumper{
+  height: 100px;
+  width: 300px;
+}
+
+.lines{
+  width: 80%;
+}
+
+.inner h3{
+  font-size: 20px;
+}
+
+
+/* Popup For Session */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(31, 30, 30);
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.popup-content {
+  max-width: 80%; 
+  word-wrap: break-word;
+  color: white;
+}
+
+.close {
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.close:hover {
+  color: red;
+}
+
+.github-btn{
+  margin: 5px;
+}
+
+.github-btn p{
+  color: white;
+}
+
+.github-btn a{
+  text-decoration: none;
+}
